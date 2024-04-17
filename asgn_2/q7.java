@@ -11,30 +11,33 @@ interface DetailInfo
 }
 class Person implements DetailInfo
 {
-    static int maxcount = 0;
+    static int count = 0;
     String name;
     Person(String name)
     {
       this.name = name;
-      maxcount++;
     }
 
     public void display()
     {
-     System.out.println("there are total "+maxcount+" no of persons present");
+     count();
+     System.out.println("there are total "+count+" no of charectors present");
     }
     public void count()
     {
+      for(int i = 0; i < name.length(); i++)
+          {    
+            if(name.charAt(i) != ' ')    
+             count++;    
+          } 
     }
 }
 
 class q7 {
     public static void main(String[] args) {
         Person p1 = new Person("Guru");
-        Person p2 = new Person("rereh");
-        Person p3 = new Person("gwet");
-        Person p4 = new Person("gffg");
-        Person p5 = new Person("gfewh");
+        Person p2 = new Person("rereh rgr");
         p1.display();
+        p2.display();
     }
 }
