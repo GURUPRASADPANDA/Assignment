@@ -13,7 +13,7 @@ First occurrence of maximum element is at position 2.
 Last occurrence of minimum element is at position 3.
 */
 import java.util.*;
-public class A1Q7 {
+public class q7 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter number of elements of Array : ");
