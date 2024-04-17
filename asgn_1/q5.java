@@ -20,8 +20,6 @@ public class q5 {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter number");
         int no = sc.nextInt();
-        int finalsum = 0;
-        finalsum = sum_Of_Digits(no);
-        System.out.println("final sum is : "+finalsum);
+        System.out.println("final sum is : "+ sum_Of_Digits(no));
     }
 }
