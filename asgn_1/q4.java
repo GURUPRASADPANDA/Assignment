@@ -12,11 +12,8 @@ public class q4 {
 					for(int l = 0 ; l<arr.length ; l++) {
 						for(int m = 0 ; m<arr.length ; m++){
 							for(int n = 0 ; n<arr.length ; n++) {
-								
 									if(i!=j && j!=k && k!=l && l!=m && m!=n && n!=o && i!=k &&
-											i!=l && i!=m && i!=n && i!=o && j!=m && j!=n && j!=o 
-											&& k!=m && k!=n && k!=o && l!=n && l!=o && m!=o) {
-										
+									i!=l && i!=m && i!=n &&  j!=m && j!=n && k!=m && k!=n &&  l!=n &&  m!=o) {
 									System.out.print(arr[i]);
 									System.out.print(arr[j]);
 									System.out.print(arr[k]);
@@ -25,8 +22,6 @@ public class q4 {
 									System.out.println(arr[n]);
 									
 									}
-								
-							
 							}
 						}
 					}
