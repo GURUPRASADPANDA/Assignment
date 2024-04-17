@@ -21,7 +21,7 @@ class Person implements DetailInfo
     public void display()
     {
      count();
-     System.out.println("there are total "+count+" no of charectors present");
+     System.out.println("name is "+name+" and there are total "+count+" no of charectors present");
     }
     public void count()
     {
