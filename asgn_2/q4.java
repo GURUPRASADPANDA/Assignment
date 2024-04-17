@@ -26,7 +26,11 @@ class Deposit{
     }
     void display ( )
     {
+        System.out.println("Principal is :"+Principal);
+        System.out.println("Time :"+Time);
+        System.out.println("Rate :"Rate);
         System.out.println("Total amount is :"+TotalAmt);
+        
     }
     void calcAmt( )
     {
