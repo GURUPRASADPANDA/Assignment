@@ -62,16 +62,19 @@ class Test
   }
 }
 /* 
-String a1 -: string object a1
-String a1 -: string object a1
-String a1 -: changed
-String a1 -: changed
+OUT PUT =>
+
+String a1  -: string object a1
+String a1  -: string object a1
+String a1  -: changed
+String a1  -: changed
 Integer b1 -: 46
 Integer b2 -: 46
 Integer b1 -: 64
 Integer b2 -: 64
-Object c1 -: 46
-Object c2 -: 46
-Object c1 -: string
-Object c2 -: string
+Object c1  -: 46
+Object c2  -: 46
+Object c1  -: string
+Object c2  -: string
+
 */
