@@ -1,3 +1,17 @@
+/*Question 4 ->
+
+Write a simple main class in java that contains an experiment that uses the generic Box<> class to build box
+with different types and that this class wo0rks as advertised.
+your experiment schould include the following :
+
+(0)create a boxed String object and two variables that refers to that box . Change the contents of one and 
+   determine the effect on the other. 
+(0)create a boxed Integer object and two variables that refers to that box . Change the contents of one and 
+   determine the effect on the other. 
+(0)create a boxed Object object and two variables that refers to that box . Determine what happens if you put
+   an integer in the box. 
+   
+*/
 class Box<T>
 {
     T p;
@@ -44,8 +58,7 @@ class Test
     c1.setdata("string");
     System.out.println("Object c1 -: "+c1.getdata());
     System.out.println("Object c2 -: "+c2.getdata());
-
-    
+      
   }
 }
 /* 
