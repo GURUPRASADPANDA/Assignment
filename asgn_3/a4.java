@@ -45,7 +45,6 @@ class Test
     System.out.println("Object c1 -: "+c1.getdata());
     System.out.println("Object c2 -: "+c2.getdata());
 
-    System.out.println("");
     
   }
 }
