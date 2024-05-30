@@ -4,11 +4,7 @@ class Node
  protected int regd_no;
  protected float mark;
  protected Node next;
-
-
-
 }
-
 class sl
 {
     static Node head=null;
@@ -27,12 +23,10 @@ class sl
 	    	newnode.regd_no=sc.nextInt();
             System.out.print("Student "+c+" mark ");
             newnode.mark=sc.nextFloat();
-	    	if(head==null)
-	    	{
+	    	if(head==null){
 	    		head=newnode;
 	    	}
-            else
-            {
+            else{
             	ptr.next=newnode;
             }
             ptr=newnode;
@@ -93,9 +87,7 @@ class sl
         while(temp!=null)
         {
           c++;
-          if(c==p-1)
-          {
-            
+          if(c==p-1){
             newNode.next = temp.next;
             temp.next=newNode;
             System.out.println("New data at "+c+1+" inserted");
@@ -103,16 +95,14 @@ class sl
           }
           temp=temp.next;
         }
-        if(c==0)
-        {
+        if(c==0){
             System.out.println("entered position is invalid");
         }
        return head;
     }
     public static Node DelBeg(Node start)
     {
-        if(head == null)
-        {
+        if(head == null){
             System.out.println("no data to delete");
             return head;
         }
@@ -122,8 +112,7 @@ class sl
     }
     public static Node DelEnd(Node start)
     {
-        if(head == null)
-        {
+        if(head == null){
             System.out.println("no data to delete");
             return head;
         }
@@ -138,30 +127,25 @@ class sl
     }
     public static Node DelAny(Node start)
     {
-        if(head==null)
-        {
+        if(head==null){
             System.out.println("no data to delete");
             return head;
         }
         System.out.println("enter the position you want to delete Node");
         int p = sc.nextInt();
-
         int c = 0;
         Node temp = head;
         while(temp!=null)
         {
           c++;
-          if(c==p-1)
-          {
-            
+          if(c==p-1){
             temp.next=temp.next.next;
             System.out.println(" data at "+c+1+" deleted");
             return head;
           }
           temp=temp.next;
         }
-        if(c==0)
-        {
+        if(c==0){
             System.out.println("entered position is invalid");
         }
        return head;
@@ -170,13 +154,11 @@ class sl
     {
       System.out.println("enter the resistration number of student you want to delete from database");
       int reg = sc.nextInt();
-        if (head == null) 
-        {
+        if (head == null) {
             System.out.println("List is empty.");
             return;
         }
-        if (head.regd_no == reg) 
-        {
+        if (head.regd_no == reg) {
             head = head.next;
             System.out.println("Deleted node with regd_no: " + reg);
             sl.head = head;
@@ -188,8 +170,7 @@ class sl
       while(temp!=null)
       {
         p++;
-        if(reg == temp.next.regd_no)
-        {
+        if(reg == temp.next.regd_no){
           temp.next=temp.next.next;
           System.out.println("student"+p+1+" having registration number"+reg+" is deleted");
           valid = false;
@@ -197,15 +178,13 @@ class sl
         }
         temp=temp.next;
       }
-      if(valid)
-      {
+      if(valid){
           System.out.println("entered registration number does't exist");
       }
     }
     public static void search(Node head)
     {
-      if(head==null)
-      {
+      if(head==null){
         System.out.println("no element to search");
         return;
       }
@@ -215,8 +194,7 @@ class sl
       boolean valid = true;
       while(temp!=null)
       {
-        if(reg == temp.regd_no)
-        {
+        if(reg == temp.regd_no){
             System.out.println("enter the mark of student having reg no"+reg);
             temp.mark = sc.nextInt();
             System.out.println("new mark updated successfully");
@@ -227,7 +205,6 @@ class sl
       }
       if(valid)
       System.out.println("invalid registration number ");
-      
     }
     public static void sort(Node start)//////not done
     {
@@ -236,12 +213,10 @@ class sl
     }
     public static int count(Node head)
     {
-        if(head==null)
-        {
+        if(head==null){
             return 0;
         }
-        if(head.next == null)
-        {
+        if(head.next == null){
             return 1;
         }
         int c = 1;
@@ -250,8 +225,7 @@ class sl
         {
             c++;
             temp = temp.next;
-        }
-        return c;
+        } return c;
     }
     public static Node reverse(Node head) {
         Node prev = null;
@@ -279,7 +253,6 @@ class sl
             temp=temp.next;
         }
     }
-    
 }
 class Test
 {
@@ -323,10 +296,5 @@ class Test
                 default -> System.out.println("Wrong choice");
             }
         }
-
     }
 }
-     
-
-      
-    
