@@ -6,6 +6,14 @@ public static < E > void printArray( E[] inputArray)
 import java.util.*;
 class q5
 {
+    public static < E > void printArray( E[] inputArray)
+    {
+         for(int  i = 0 ; i < inputArray.length;i++)
+         {
+            System.out.println(inputArray[i]);
+         }
+    }
+    
     public static void main(String[] args) 
     {
        Scanner sc  = new Scanner(System.in);
@@ -28,15 +36,6 @@ class q5
        System.out.println("String array data are");
        printArray(arrstring);
     }
-
-
-       public static < E > void printArray( E[] inputArray)
-       {
-         for(int  i = 0 ; i < inputArray.length;i++)
-         {
-            System.out.println(inputArray[i]);
-         }
-       }
 }
 
 /*
