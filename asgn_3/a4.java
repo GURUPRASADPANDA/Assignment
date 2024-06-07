@@ -37,10 +37,10 @@ class Test
     a1.setdata("string object a1");
     Box<String> a2 = a1;
     System.out.println("String a1 -: "+a1.getdata());
-    System.out.println("String a1 -: "+a2.getdata());
+    System.out.println("String a2 -: "+a2.getdata());
     a1.setdata("changed");
     System.out.println("String a1 -: "+a1.getdata());
-    System.out.println("String a1 -: "+a2.getdata());
+    System.out.println("String a2 -: "+a2.getdata());
 
     Box<Integer> b1 = new Box<Integer>();
     b1.setdata(46);
@@ -65,9 +65,9 @@ class Test
 
 /* 
 String a1 -: string object a1
-String a1 -: string object a1
+String a2 -: string object a1
 String a1 -: changed
-String a1 -: changed
+String a2 -: changed
 Integer b1 -: 46
 Integer b2 -: 46
 Integer b1 -: 64
