@@ -7,32 +7,34 @@ Write the main method in a separate class to implement the addition of two compl
 number with the given method signature as above.
  */
 
-class Complex{
+class Complex
+{
     int real;
     int img;
-     
-    Complex(){
-
+    Complex()
+    {
     }
-    void setData(int real,int img){
+    void setData(int real,int img)
+    {
     this.real = real;
     this.img = img;
     }
-    void display(){
+    void display()
+    {
      System.out.println(real+" + "+img+"i");
     }
-    public Complex add(Complex c1, Complex c2){
+    public Complex add(Complex c1, Complex c2)
+    {
     Complex c3 = new Complex();
     c3.real = c1.real + c2.real;
     c3.img = c1.img + c2.img;
     return c3;
     }
-
 }
-
-
-class q2 {
-    public static void main(String[] args) {
+class q2
+{
+    public static void main(String[] args) 
+   {
         Complex c1 = new Complex();
         c1.setData(4, 5);
         Complex c2 = new Complex();
