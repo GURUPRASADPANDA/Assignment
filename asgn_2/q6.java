@@ -1,11 +1,10 @@
 abstract class Marks
 {
-double markICP;
+  double markICP;
   double markDSA;
   double percentage;
   public abstract void Percentage();
 }
-
 class CSE extends Marks
 {
     double algoDesign;
@@ -20,8 +19,6 @@ class CSE extends Marks
         this.percentage = ((markICP + markDSA + algoDesign)/300)*100;
         System.out.println(percentage);
     }
-    
-    
 }
 class NonCSE extends Marks
 {
@@ -38,11 +35,10 @@ class NonCSE extends Marks
         System.out.println(percentage);
     }
 }
-
-
-
-class q6 {
-    public static void main(String[] args) {
+class q6 
+{
+    public static void main(String[] args) 
+  {
         CSE s1 = new CSE(90,91,96);
         NonCSE s2 = new NonCSE(56,60,58);
         s1.Percentage();
