@@ -26,3 +26,9 @@ import java.util.*;
            System.out.println("sum of all the elements are :"+sum);
          }
     }
+/*
+1       2       3       4
+5       6       7       8
+9       10      11      12
+sum of all the elements are :78
+*/
