@@ -37,7 +37,6 @@ public class q7 {
             if(arr[i]==max){
                 max_ctr+=1;
                 max_index_last=i;
-
             }
         }
         int min = arr[0] ;
