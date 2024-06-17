@@ -10,9 +10,7 @@ class MarksOutOfBoundException extends Exception
     {
         super(message);
     }
-
 }
-
 class Student
 {
     public static void main(String[] args) 
